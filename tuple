@@ -1,0 +1,23 @@
+num=(25,35,45,60)
+print(num)
+print(type)
+print(max(num))
+print( min(num))
+print (num[2])
+print (len(num))
+num2=(42,'sagar',8.6)
+print(num2)
+print(num2[1])
+# num2[1]='pramodh' #item assignment not posible in tuple
+number,name,decimal=num2
+print (number)
+print (name)
+print (decimal)
+print ('sagar' in num2)#gives true or false
+num2=(42,'sagar',8.6,[1,2,3,4])#we can add tuple in tuple ,tuple in list ,list in tuple so on....
+print(num2[3]) #to acces in tuple alone#yes use []
+print(num2[3][1]) #to access in list#output is 2
+num3=(25)#this is not tuple its int
+print(type(num3))
+num3=(25,)#this is tuple with comma
+print(type(num3))

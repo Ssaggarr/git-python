@@ -1,0 +1,49 @@
+diary={1:'akash',2:'bala',3:'cloud',4:'data'}#key:value key acts as set ,value acts as list
+print(diary)
+print(diary[3])#as set is unique unordered but list is ordered ,mutable,collection of items
+print()
+books={'aaaa':100,'bbbb':300,'cccc':200,'dddd':400}
+print(books)
+print(books['cccc'])# output is 200
+print()
+# print(books['eeee'])#it doesnt give output and not specifies to specify use below lines
+# print()
+print(books['cccc'])
+print(books.get('cccc')) #output is same 200
+print()
+print(books.get('eeee'))#output is none for this(it specifies)
+print(books.get('bbbb','eeee')) #output is 300 # below output is eeee because key ffff is not present 
+print(books.get('ffff','eeee'))#dict.get(key,default) if key exists it should return value if not default 
+print()
+
+books={'aaaa':100,'bbbb':300,'cccc':200,'dddd':400,'gggg':500,'cccc':100}
+print(books)#output{'aaaa': 100, 'bbbb': 300, 'cccc': 100, 'dddd': 400, 'gggg': 500}
+#because the python reads left to right i.e key first all unique keys are stored as it is
+#when it encounters 'cccc' again it overwrites value of the already existing 'cccc'
+
+print ()
+keyss={'sagar','cloud','linux'}
+valuess=[7,8,9]
+ledger = dict(zip(keyss,valuess)) #to create your dictionary with keys and values
+print(ledger) #output {'cloud': 7, 'sagar': 8, 'linux': 9}
+print()
+print(ledger.pop('cloud')) #output 8 because it returns the value
+print(ledger) #{'sagar': 7, 'linux': 9}
+print()
+
+mix={'aaaa':67,'bbbb':('apple','banana','coke'),'cccc':[25,47,89,90],'dddd':{1:'crptography',2:'dataanalyst'}}
+print(mix)
+print (mix['aaaa'])
+print (mix['bbbb'])
+print (mix['cccc'])
+print (mix['dddd'])
+print(mix['dddd'][2])# here 2 is the key specified inside dict not the index like 0,1
+
+print()
+print (mix['cccc'])#accesing list inside dict
+print(mix['cccc'][3])# here in while accesing inside list you use index number
+print()
+print (mix['bbbb'][2])# here in while accesing inside tuple you use index number also #output is coke
+
+
+

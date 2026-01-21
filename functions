@@ -1,0 +1,150 @@
+a=10
+b=20
+c=a+b
+print(c)
+# #say i wanna define this block and call in any part of the file or in any file
+# # we use define block ,add is variable name it be anything
+# #also use indentation with tab space to define block
+# #use : to indicate start of block
+def add():
+    """adds two values"""
+    a=10
+    b=20
+    c=a+b
+    print(c)
+
+#now call in any part of the block
+add()
+#now i dont want same numbers as result because i just want the fucntion
+def sub(x,y):# you define the variables
+    """sub two values"""
+    a=x
+    b=y
+    c=a-b
+    print(c)
+sub(50,20) #calling
+#say now you want defined function to not print but just give the value 
+def mul(x,y)             :# you define the variables
+    """mul two values"""
+    a=x
+    b=y
+    c=a*b
+    return c #instead of print i use return
+result=mul(50,20) 
+print("result is ",result)
+
+ 
+#MODULES-stores realated functions
+#here math module as example has squre root,pow,etc
+
+
+
+
+
+
+import math
+num=25
+result=(math.sqrt(num)) #specify math.function
+print(result)
+
+#or
+import math as m #instead of writing math every time 
+num=25
+result=(m.sqrt(num)) #specify math.function
+print(result)
+
+#or
+import math as m #instead of writing math every time 
+from math import sqrt,ceil,pow
+num1=25
+num2=36.3
+result=(math.sqrt(num1)) #specify math.function
+result1=(math.ceil(num2))
+print(result,result1)
+
+
+# #SWAPPING
+
+a,b=b,a
+print(a,b)
+
+# #swapping with user  input values not your assigned values
+# c=40
+# d=60 instead we write input()function which is by default take values as string
+e=input("enter the 1st number ")
+f=input("enter the 2nd number ")
+#e=c+d # only using this doesnt work because you get concatentd string not sum
+e=int(e)
+f=int(f)#convert string to int
+g=e+f
+print(g)
+
+# #USER INPUT FUNCTION input("comment")
+e=input("enter the 1st number ")
+print(e[1]) #slicing 
+#
+e=input("enter the character ")
+print(e[1]) #slicing
+#instead of wasting data to store multiple characters we are assigning to store only 1 even if user gives multilpe
+e=input("enter the character ")[1] #1 meaning here is index number
+print(e)
+
+#IF 
+
+num3 = input("enter number ")
+num3=int(num3)
+if num3 % 2==0:
+    print("its even")
+if num3 % 2==1:
+    print("its odd")
+
+#nested if-else
+num3 = input("enter number ")
+num3=int(num3)
+num4 = input("enter number ")
+num4=int(num4)
+if num3 % 2==0:
+    print("its even")
+    if num4 > 10:
+        print("super grade")
+    else:
+        print("try again")
+else:
+    print("its odd")
+
+#ELIF or ELSE IF
+num5 = input("enter number ")
+num5=int(num5)
+if num5==1:
+    print("one")
+elif num5==2:
+    print("two")
+elif num5==3:
+    print("three")
+elif num5==4:
+    print("four")
+else:
+    print("wrong number")   
+
+#for the same code above we can use switch which is callled match case in python
+#this is more efficient than above code
+
+num5 = input("enter number ")
+num5=int(num5)
+match num5:
+    case 1:
+        print("one")
+    case 2: 
+        print("two")
+    case 3: 
+        print("three")
+    case 4:
+        print("four")
+    case 5:
+        print("wrong number")  
+
+
+
+
+
+

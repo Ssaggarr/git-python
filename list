@@ -1,0 +1,18 @@
+num1=[10,20,30]
+num2=[40,50,60]
+num3=sum(num1)+sum(num2)
+print (num3)
+num2.append(70)
+print (num2)
+# num1.extend([0][1])
+# print(num1)
+num1.insert(1,80)
+print(num1)
+num2.remove(40)
+print(num2)
+# num1.pop([1])
+# print(num1)
+# num1.index(80)
+# print(num1)
+num1.count()
+print(num1)

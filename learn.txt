@@ -1,0 +1,3 @@
+function prompt {"PS> "}     #for making the command prompt small
+
+"""commemts on the defined function"""
