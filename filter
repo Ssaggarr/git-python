@@ -1,0 +1,50 @@
+from functools import reduce  #only for last part reduce 
+num=[90,87,56,53,98,51,76,21,43] #we are filtering even no. out of this list
+even=[]
+# for i in num:
+#     if i%2==0:
+#        even.append(i)
+
+# def is_even(n):
+#     return n%2==0
+
+#instead of writing whole two lines use lambda
+# is_even=lambda n :n%2==0
+#instead of writing is_even outside the code we can directly again mention in one line
+# even=list(filter(lambda n :n%2==0,num)) #filter always returns object so use list to access 
+# print(even)
+
+
+#MAPS
+#say now i want to double the the list from even
+
+# def double_it(n):
+#     return n*2
+even=list(filter(lambda n :n%2==0,num))
+# double=list(map(double_it,even)) #like in def of even we can reduce the lines by using lamda
+double=list(map(lambda n:n*2,even))
+print("even ",even)
+print("double ",double)
+
+#REDUCE
+#say if you want to reduce list by adding 
+#same method but its not list anymore
+#also reduce 
+def sum_it(a,b):
+    return a+b
+
+# tha above again it can be reduced to one line using lambda
+
+
+
+
+
+
+#THE ENTIRE ABOVE CAN BE REDUCED TO THIS 
+#EVEN THIS CAN BE FURTHER REDUCED BUT LINE WILL BE LONGER
+even=list(filter(lambda n :n%2==0,num))
+double=list(map(lambda n:n*2,even))
+sum=reduce(lambda a,b:a+b,double)
+print("even ",even)
+print("double ",double)
+print("total ",sum)

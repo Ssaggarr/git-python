@@ -1,0 +1,21 @@
+from array import *
+num1 = array('i', [])
+
+n = int(input("How many numbers? "))
+
+for i in range(n):
+    value = int(input("Enter number: "))
+    num1.append(value)
+   
+
+
+num2=array(num1.typecode,(n for n in num1))
+
+num1[2]=10
+# for x in num1:
+print(num1.tolist())
+# for y in num1:  
+print(num2.tolist())
+
+
+

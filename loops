@@ -1,0 +1,83 @@
+# #WHILE LOOPS
+# #NESTED WHILE LOOPS
+# i=0
+# j=0 #if j is defined outside loop output
+# while i<=4:
+#     print(" 1 hour on millers plantet  ")
+#     i+=1
+    
+#     while j<=4:
+#         print("completed",)
+#         j+=1
+# print("day finished")
+
+
+# #1 hour on millers plantet  
+# # completed
+# # completed
+# # completed
+# # completed
+# # completed
+# #  1 hour on millers plantet  
+# #  1 hour on millers plantet  
+# #  1 hour on millers plantet  
+# #  1 hour on millers plantet  
+# # day finished
+
+
+# i=0
+
+# while i<=4:
+#     print(" 1 hour on millers plantet  ")
+#     i+=1
+#     j=0 #if j is defined inside loop output
+#     while j<=4:
+#         print("completed",)
+#         j+=1
+# print("day finished")
+# #OUTPUT
+# # 1 hour on millers plantet  
+# # completed
+# # completed
+# # completed
+# # completed
+# # completed
+# #  1 hour on millers plantet  
+# # completed
+# # completed
+# # completed
+# # completed
+# # completed.....
+
+
+
+#FOR  LOOP
+# data=[34,'sagar','cloud',5.6,213]
+# for records in data:
+#     print(records)
+
+
+# data=[34,'sagar','cloud',5.6,213]
+# n=len(data)
+# i=0
+# while i<n:  #this is i<n because n=5,i=4 so i<=n gives index error
+#     print(data[i])
+#     i+=1
+
+
+#CONTINUE
+
+# for records in range(10):
+#     if records % 3==0:
+#         continue
+        
+#     print(records)       
+
+
+#BREAK
+data=(5,9,12)
+for records in data:
+    if records % 3==0:
+        break
+    print(records)       
+#output is 5
